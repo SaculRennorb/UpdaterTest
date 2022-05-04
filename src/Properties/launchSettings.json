@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "Debug": {
+      "commandName": "Executable",
+      "executablePath": "./Rennorb.Updater.exe",
+      "workingDirectory": "../bin/Debug/net6.0/"
+    },
+    "Sign Binaries": {
+      "commandName": "Executable",
+      "executablePath": "./Rennorb.Updater.exe",
+      "commandLineArgs": "--sign",
+      "workingDirectory": "../bin/Debug/net6.0/"
+    }
+  }
+}

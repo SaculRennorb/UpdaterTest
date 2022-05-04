@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<BaseOutputPath>../bin</BaseOutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Resource Include="config\updater.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Resource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="..\res\public.pem" CopyToOutputDirectory="PreserveNewest" Link="res\public.pem" />
+		<Content Include="..\res\secret.pem" CopyToOutputDirectory="PreserveNewest" Link="secret.pem" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Rennorb.Updater" Version="1.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="config\updater.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="..\sign\binaries.zip" CopyToOutputDirectory="PreserveNewest" Link="sign\binaries.zip" />
+		<Content Include="..\sign\version.txt" CopyToOutputDirectory="PreserveNewest" Link="sign\version.txt" />
+	</ItemGroup>
+
+</Project>

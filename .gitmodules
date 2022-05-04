@@ -1,0 +1,3 @@
+[submodule "src/Updater"]
+	path = src/Updater
+	url = git@github.com:SaculRennorb/Updater.git

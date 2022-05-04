@@ -1,0 +1,9 @@
+﻿{
+	"program_dll_path": "Test.dll",
+	"github_repo_id": "Rennorb/UpdaterTest",
+	"client_id": "a3ce36a6f06de35cbd67",
+	"signature_hash_algorithm": "SHA512",
+	"signature_padding": "Pkcs1",
+	"public_key_path": "res/public.pem",
+	"current_auth": null
+}
